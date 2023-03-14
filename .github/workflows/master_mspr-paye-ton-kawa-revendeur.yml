@@ -54,3 +54,23 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C9AD1AD69CDB45469DB39514B2659EAD }}
           package: .
+  
+  projectRun:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+
+      - name: run api
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: npm run dev
+        run: |
+          npm run dev
+        
+
+          
+          
+          
+          
