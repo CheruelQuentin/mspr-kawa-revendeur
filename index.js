@@ -1,11 +1,8 @@
 const Configuration = require('./config');
-console.log(`NODE_ENV=${Configuration.NODE_ENV}`);
-console.log(`NODE_PORT=${Configuration.PORT}`);
-console.log(`NODE_PORT=${Configuration.HOST}`);
 
 const bodyParser = require('body-parser')
 const express = require('express')
-const revendeur = require('./routes/revendeur.routes')
+const revendeur = require('./src/routes/revendeur.routes')
 const winston = require('winston'),  expressWinston = require('express-winston');
 
 
