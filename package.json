@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "set NODE_ENV=development&&nodemon ./index.js",
+    "test": "set NODE_ENV=test&& jest",
     "prod": "node dist/main.js",
     "build": "babel src -d dist"
   },

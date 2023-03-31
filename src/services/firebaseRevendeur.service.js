@@ -1,4 +1,4 @@
-const {admin} = require('./Firebase');
+const { admin} = require('./Firebase');
 
 async function findHash( userId ) {
     let db = admin.firestore();
