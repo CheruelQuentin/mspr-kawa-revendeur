@@ -6,11 +6,27 @@ const bcrypt = require('bcryptjs')
 
 async function allProducts(req,res) {
     await Security.validateFirebaseIdToken(req, res,async() => {
-        const test = (await axios.get('https://615f5fb4f7254d0017068109.mockapi.io/api/v1/products')).data
-        console.log(test)
-        res.status(200).send(test)
+        const products = (await axios.get('https://615f5fb4f7254d0017068109.mockapi.io/api/v1/products')).data
+        console.log(products)
+        res.status(200).send(products)
     })
 }
+async function allCustomers(req,res) {
+    await Security.validateFirebaseIdToken(req, res,async() => {
+        const customers = (await axios.get('https://615f5fb4f7254d0017068109.mockapi.io/api/v1/customers')).data
+        console.log(customers)
+        res.status(200).send(customers)
+    })
+}
+async function allStocks(req,res) {
+    // await Security.validateFirebaseIdToken(req, res,async() => {
+        const products = (await axios.get('https://615f5fb4f7254d0017068109.mockapi.io/api/v1/products')).data
+        const stocks = products.map(product => { { return { name: product.name, quantity: product.stock } }})
+        console.log(stocks)
+        res.status(200).send(stocks)
+    //})
+}
+
 
 async function login(req, res) {
     try {
@@ -34,5 +50,5 @@ async function login(req, res) {
 
 
 module.exports = {
-    allProducts, login
+    allProducts, login, allCustomers, allStocks
 }
