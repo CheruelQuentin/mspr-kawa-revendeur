@@ -1,6 +1,6 @@
 const { allProduct,allStocks  } = require('../services/productRevendeur.service');
 const { allCustomer } = require('../services/customerRevendeur.service');
-const { findHash } = require('../services/firebaseRevendeur.service');
+
 
 const mockFirestoreData = {
     _fieldsProto: {
