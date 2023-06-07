@@ -4,253 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa1e008-7e16-472e-bb6c-a53194d48502" name="Changes" comment="fix bug">
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/clover.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/coverage-final.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/block-navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/customerRevendeur.service.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/prettify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/prettify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/productRevendeur.service.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/sort-arrow-sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov-report/sorter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/revendeur.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/revendeur.test.js" afterDir="false" />
+    <list default="true" id="e9af40e2-a1cb-43d4-ae69-901441129f8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/master_mspr-paye-ton-kawa-revendeur.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/revendeur.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/revendeur.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/security/verifyUser.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/services/firebaseRevendeur.service.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/controllers/revendeur.controller.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/routes/revendeur.routes.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2LAypBXXRGCfP7x0hM7gUViwVRW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2QrlChhOBWsPQZPX3qdPREPI7DZ" />
   <component name="ProjectViewState">
     <option name="flattenModules" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/save/EPSI/msprPayeTonKawa/api/api/revendeur&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;F:/save/EPSI/msprPayeTonKawa/api/api/revendeur/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/save/EPSI/msprPayeTonKawa/api/revendeur",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\save\EPSI\msprPayeTonKawa\api\api\revendeur\src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\save\EPSI\msprPayeTonKawa\api\revendeur" />
     </key>
-  </component>
-  <component name="RunManager" selected="Jest.should return all customers (1)">
-    <configuration name="should return all customers (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/revendeur.test.js" />
-      <test-names>
-        <test-name value="should return all customers" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should return all customers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/revendeur.test.js" />
-      <test-names>
-        <test-name value="should return all customers" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should return all products with their stock quantities" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/revendeur.test.js" />
-      <test-names>
-        <test-name value="should return all products with their stock quantities" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should return all products" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/revendeur.test.js" />
-      <test-names>
-        <test-name value="should return all products" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should return user hash" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/revendeur.test.js" />
-      <test-names>
-        <test-name value="should return user hash" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="revendeur" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="revendeur" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Jest.should return all customers (1)" />
-        <item itemvalue="Jest.should return all customers" />
-        <item itemvalue="Jest.should return user hash" />
-        <item itemvalue="Jest.should return all products with their stock quantities" />
-        <item itemvalue="Jest.should return all products" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ffa1e008-7e16-472e-bb6c-a53194d48502" name="Changes" comment="" />
-      <created>1675328363694</created>
+      <changelist id="e9af40e2-a1cb-43d4-ae69-901441129f8d" name="Changes" comment="" />
+      <created>1686119454691</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1675328363694</updated>
-      <workItem from="1675328365780" duration="1286000" />
-      <workItem from="1675329695559" duration="1050000" />
-      <workItem from="1675342786046" duration="2621000" />
-      <workItem from="1675346107717" duration="3220000" />
-      <workItem from="1675669866651" duration="25000" />
-      <workItem from="1676885811376" duration="1312000" />
-      <workItem from="1676889970155" duration="338000" />
-      <workItem from="1676990069072" duration="671000" />
-      <workItem from="1678701664610" duration="1508000" />
-      <workItem from="1678784932616" duration="5761000" />
-      <workItem from="1678791813691" duration="4477000" />
-      <workItem from="1678815388930" duration="11000" />
-      <workItem from="1679816667915" duration="1053000" />
-      <workItem from="1680266708286" duration="705000" />
-      <workItem from="1680267429055" duration="2491000" />
-      <workItem from="1680509115146" duration="2562000" />
-      <workItem from="1680597709611" duration="22000" />
-      <workItem from="1680604050883" duration="7000" />
-      <workItem from="1682606041255" duration="1603000" />
-      <workItem from="1682680537920" duration="11000" />
-      <workItem from="1682684544886" duration="595000" />
-      <workItem from="1682688888286" duration="3551000" />
-      <workItem from="1682692562883" duration="44000" />
-      <workItem from="1682692622650" duration="273000" />
-      <workItem from="1682692906427" duration="907000" />
-      <workItem from="1682693840145" duration="1142000" />
-      <workItem from="1683015228195" duration="8000" />
-      <workItem from="1683722223608" duration="1194000" />
-      <workItem from="1683723527394" duration="947000" />
-      <workItem from="1684323758660" duration="1798000" />
-      <workItem from="1684489709582" duration="20000" />
-      <workItem from="1684947285455" duration="913000" />
-      <workItem from="1684997929081" duration="24000" />
+      <updated>1686119454691</updated>
+      <workItem from="1686119455690" duration="2953000" />
     </task>
-    <task id="LOCAL-00001" summary="add stocks + Customers">
-      <created>1682689732666</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1682689732666</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix bug">
-      <created>1682689864778</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1682689864778</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix bug">
-      <created>1682693914590</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1682693914590</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add stocks + Customers" />
-    <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

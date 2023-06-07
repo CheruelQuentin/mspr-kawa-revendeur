@@ -8,3 +8,4 @@ router.get('/customers',RevendeurController.allCustomers)
 router.post('/login',RevendeurController.login)
 
 module.exports = router;
+exports.revendeur = router;
