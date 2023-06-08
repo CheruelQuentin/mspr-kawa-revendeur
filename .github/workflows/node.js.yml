@@ -16,13 +16,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    
-    - name: Download SonarScanner
+    - run: npm install
+    - name: Set up SonarScanner
       run: |
-        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2-linux.zip
-        unzip sonar-scanner-cli-4.6.2-linux.zip
-        export PATH=$PWD/sonar-scanner-4.6.2-linux/bin:$PATH
-
+        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
+        unzip sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
+        export PATH=$PWD/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
 # run ton code 
 
     - name: Run SonarQube Analysis
@@ -33,5 +32,4 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     
     
-    - run: npm install
     - run: npm test
