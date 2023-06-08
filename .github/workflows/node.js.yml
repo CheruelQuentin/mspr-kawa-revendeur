@@ -16,5 +16,22 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Set up SonarScanner
+      run: |
+        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
+        unzip sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
+        export PATH=$PWD/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
+
+# run ton code 
+
+    - name: Run SonarQube Analysis
+      uses: SonarSource/sonarcloud-github-action@master
+      with:
+        args: -Dsonar.projectKey=CheruelQuentin_mspr-kawa-revendeur -Dsonar.organization=cheruelquentin
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    
+    
     - run: npm install
     - run: npm test
