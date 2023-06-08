@@ -17,11 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Set up SonarScanner
+    - name: Download SonarScanner
       run: |
-        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
-        unzip sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
-        export PATH=$PWD/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
+        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2-linux.zip
+        unzip sonar-scanner-cli-4.6.2-linux.zip
+        export PATH=$PWD/sonar-scanner-4.6.2-linux/bin:$PATH
 
 # run ton code 
 
