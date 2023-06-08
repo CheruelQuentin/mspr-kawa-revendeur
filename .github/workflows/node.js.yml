@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+    SONAR_SCANNER_VERSION: 4.4.0.2170
+
 jobs:
   build:
 
