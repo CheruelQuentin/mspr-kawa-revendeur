@@ -24,7 +24,7 @@ jobs:
     - name: Run SonarQube Analysis
       uses: SonarSource/sonarcloud-github-action@master
       with:
-        args: -Dsonar.projectKey=LoicRbn_GithubCiCd -Dsonar.organization=loicrbn
+        args: -Dsonar.projectKey=CheruelQuentin_mspr-kawa-revendeur -Dsonar.organization=loicrbn
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
     - run: npm install
