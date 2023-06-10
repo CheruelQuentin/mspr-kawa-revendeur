@@ -36,7 +36,9 @@ jobs:
       run: gcloud config set project mspr-payetonkawa-95a92
 
     - name: Authenticate with Google Cloud
-      run: gcloud auth activate-service-account --key-file= mspr-payetonkawa-key.json
+      run: |
+        ls
+        gcloud auth activate-service-account --key-file= mspr-payetonkawa-key.json
       
     - name: Set Google Application Credentials
       run: echo '${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}' > gcp-key.json
