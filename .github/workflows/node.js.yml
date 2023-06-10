@@ -43,7 +43,8 @@ jobs:
       
 
     - name: Set Google Application Credentials
-      run: echo "${{ secrets.GCP_SERVICE_ACCOUNT }}" > gcp-key.json
+      run: echo "${{ secrets.GCP_SERVICE_ACCOUNT }}" | base64 --decode > gcp-key.json
+      
       
     - name: Authenticate with Google Cloud
       run: gcloud auth activate-service-account --key-file=gcp-key.json
