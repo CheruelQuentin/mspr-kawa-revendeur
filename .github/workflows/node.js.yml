@@ -46,7 +46,7 @@ jobs:
 
     - name: Set Google Application Credentials
       run: |
-          echo ${{ secrets.GCP_SERVICE_ACCOUNT }} | base64 --decode > gcp-key.json
+          echo ${{ secrets.GCP_SERVICE_ACCOUNT }} | base64 -d> gcp-key.json
 
     - name: Configure gcloud
       uses: google-github-actions/setup-gcloud@v0.3.0
