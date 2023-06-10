@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mspr-payetonkawa-95a92",
+  "private_key_id": "916603e4e4ee8aef128088e242e98c454fbf4e77",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRJL4Oz5jEFcYW\nCxBy79HaHEY5AK7j5+r06ibd2qtqxMJTBp+JH8uFzsT1xORilDYxqgEy8wVNL8oa\nzfQzAE1sbKXegq/aCwyFpCV8tz+otAUX3E/nN3QDNYXdMSIqJL6uAP20yOzElXmt\nNnI7FTm0GwOG49KHiPXpf9ajDkt9MWleHwHTGWgx/2o4ivT5epuAq0soL1fIa/VG\nU9mgIJMKXyzGue6tmT3VVfzM6pNxPlUW3uDnHIcGlFYz8DnePChJfUgs0kYkXW31\n64jkGrKfYavrHm+6JiBrlpOsVK9kNhFEVTc63t1Q9BzF2vc0N9p3o5ZLXdbc8Y9E\neuNEt2d/AgMBAAECggEAHm56OS17zQxeBlcVzaOXpWT30tOGnyLfzUNE5IMs7hwz\nKmGMVSeLNa0ge6JqmO139UIHaqJx4wlRHxVYsxMYMO6eNAJQFCoHaGq6CaugV6va\nEd68wagP+WeQUt8TWY5/MFJ0mBmkWfZl/g4uEOrFuq8zlC0SNSZ4ocE4OgGaelyy\n4T/w+HJF2ib0mkHIT0QrmNgEZp5vWSAhozXoZ7c1WdNIM54/kxmnDKss2ais+Eq0\nc7QyDiDBM5ymlpFQHUtC9n3POUxfi/In78dU5dZ/LJ4Wrg4M/mDXT5Z1h8io/XbH\nrBLLKTA+AwD2ieilIDGchQO/U8tZdUnooVGdgJx2AQKBgQDpONGRUKMYf9Prbr2C\nJiQk17io9dYaw572EAjEIuK/PwBGP7x3HUP8vuqPIPcNKSJxTB9BEe/6N+6l8XKE\nvNTd+Ju6o7qkLLMEUZ6QO+qVCtVzgo+8dkzLM9A2oVbq8Vl3gy3s0sALZMUILald\n9rOVCT+3v/t3y7mFUrclVf78WwKBgQDlkeXc9KFPXMdyupj6GXIXYmhmGVwVuoGK\nSkdV+4ik8qfdwF++Zmu/MyNw+mgtxcFYqrssp/93pJxlAWt85kCgLMegrG6XAX/I\n8hC2J+HOdo3ZlfXroR15t2e6uknGAJzkaol1d7T2WHP6h+S9FWO3FC59sp1KbsQf\nHpcaOML6rQKBgQDMlQP41eSL7C3o21av4WdZTkZ1KFltVuaNcNlPvE5tdwV1mhln\n36sw/gRiE4fD6q6E9kKAYQzC0Oeud5N+burH4HozCccClxdeFX7jhTutDDjbv874\ngkmxAr2F/pdxNs/Fb7QMh37hP787AlsMywkTFm7ncChWGMaf9kQkI0Cu+wKBgHTX\nyTKon+GQy0KtjmbcxKD6SUCN77xvbLdCDwTIPUgW6TGIVDLIVla+ZG+AQ73oRPwo\nCZQ0/WWbtq4CBv9PAd2EbSZuHOtmq+9OpQrRSbCXzqLMHJqNKj9lBbqYTiwk67Wm\nM8hB4Szw4DbHK7jBRjtMXk1Dt6LGtbNREn8aHMMRAoGBAKthykd537s87xJs4Zjn\n1v5Xd4G/MAMWqJ6ZIVRCjd51Q6wzOvMsw+TePACtwzSB7MuePr73sF3HB+fagQIY\nid2EGNeqd7OXorebDMCxkxzGu1+z8FVt4f4yq/hj7n+Tuj4S7mvjNjLldvtF/l9E\nC/MMrpOvO2qaoSnMdHYTGloT\n-----END PRIVATE KEY-----\n",
+  "client_email": "mspr-payetonkawa-95a92@appspot.gserviceaccount.com",
+  "client_id": "104982341723788154341",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mspr-payetonkawa-95a92%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
