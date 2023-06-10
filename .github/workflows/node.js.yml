@@ -41,6 +41,10 @@ jobs:
     - name: Set Google Cloud Project
       run: gcloud config set project mspr-payetonkawa-95a92
       
+    - name: Authenticate with Google Cloud
+      run: gcloud auth login
+      
+      
     - name: Deploy to Google Cloud Platform
       if: ${{ success() }}
       run: |
