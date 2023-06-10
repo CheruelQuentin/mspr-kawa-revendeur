@@ -1,0 +1,22 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+    // Définissez ici vos règles personnalisées ou utilisez celles par défaut
+    "no-console": "off", // Permet l'utilisation de console.log()
+    "no-unused-vars": "warn", // Avertissement pour les variables déclarées mais non utilisées
+    "indent": ["error", 2], // Indentation de 2 espaces
+    "linebreak-style": ["error", "unix"], // Style de saut de ligne Unix
+    "quotes": ["error", "single"], // Utilisation de guillemets simples pour les chaînes de caractères
+    "semi": ["error", "always"], // Utilisation obligatoire des points-virgules
+    "no-trailing-spaces": "error", // Pas d'espaces en fin de ligne
+    "comma-spacing": "error", // Espace après chaque virgule
+    "no-multiple-empty-lines": ["error", { "max": 1 }]
+  }
+}

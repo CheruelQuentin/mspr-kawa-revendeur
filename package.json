@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "dev": "set NODE_ENV=development&&nodemon ./index.js",
     "test": "jest src/tests/revendeur.test.js --coverage",
     "prod": "NODE_ENV=development&&node ./index.js",
@@ -28,6 +30,7 @@
     "winston": "^3.8.2"
   },
   "devDependencies": {
+    "eslint": "^8.42.0",
     "webpack": "^5.76.1",
     "webpack-cli": "^5.0.1"
   }
