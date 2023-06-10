@@ -35,7 +35,12 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     
     
-    - run: npm test
+    -  name: Run test + coverage
+       run: npm test
+    
+    - name: Set Google Cloud Project
+      run: gcloud config set project mspr-payetonkawa-95a92
+      
     - name: Deploy to Google Cloud Platform
       if: ${{ success() }}
       run: |
