@@ -42,7 +42,15 @@ jobs:
       run: gcloud config set project mspr-payetonkawa-95a92
       
     - name: Authenticate with Google Cloud
-      run: gcloud auth login
+      run: echo "${{ secrets.GCP_SERVICE_ACCOUNT }}" > gcp-key.json
+    - name: Set Google Application Credentials
+      uses: google-github-actions/setup-gcloud@v0.3.0
+      with:
+        version: '355.0.0'
+        service_account_key: |
+          ${{ secrets.GCP_SERVICE_ACCOUNT }}   
+      
+      
       
       
     - name: Deploy to Google Cloud Platform
