@@ -36,3 +36,8 @@ jobs:
     
     
     - run: npm test
+    - name: Deploy to Google Cloud Platform
+      if: ${{ success() }}
+      run: |
+        gcloud builds submit --tag gcr.io/mspr-payetonkawa-95a92/revendeur
+        gcloud run deploy mspr-payetonkawa-95a92 --image gcr.io/mspr-payetonkawa-95a92/revendeur --platform managed --region us-central1 --allow-unauthenticated
