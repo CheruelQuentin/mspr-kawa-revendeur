@@ -48,7 +48,7 @@ jobs:
       with:
         version: '355.0.0'
         service_account_key: |
-          ${{ secrets.GCP_SERVICE_ACCOUNT }}   
+          ${{ secrets.GCP_SERVICE_ACCOUNT | base64decode }}
       
       
       
