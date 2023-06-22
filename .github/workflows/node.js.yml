@@ -12,7 +12,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
     - run: npm install
@@ -21,25 +21,28 @@ jobs:
         wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
         unzip sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
         export PATH=$PWD/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
-    
+
     - name: Run SonarQube Analysis
       uses: SonarSource/sonarcloud-github-action@master
       with:
         args: -Dsonar.projectKey=CheruelQuentin_mspr-kawa-revendeur -Dsonar.organization=cheruelquentin
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    
+
+    - name: Run eslint
+      run: npm run lint:fix
+
     - name: Run tests and coverage
       run: npm test
-    
+
     - name: Set Google Cloud Project
       run: gcloud config set project mspr-payetonkawa-95a92
 
     - name: Authenticate with Google Cloud
       run: gcloud auth activate-service-account --key-file=mspr-payetonkawa-key.json
-    
+
     - name: Deploy to Google Cloud Platform
       if: ${{ success() }}
       run: |
         gcloud builds submit --tag gcr.io/mspr-payetonkawa-95a92/revendeur
-        gcloud run deploy mspr-payetonkawa-95a92 --image gcr.io/mspr-payetonkawa-95a92/revendeur --platform managed --region us-central1 --allow-unauthenticated
+        gcloud run deploy mspr-payetonkawa-95a92-revendeur --image gcr.io/mspr-payetonkawa-95a92/revendeur --platform managed --region us-central1 --allow-unauthenticated

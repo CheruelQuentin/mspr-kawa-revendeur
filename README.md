@@ -10,7 +10,7 @@ gcloud builds submit --tag gcr.io/mspr-payetonkawa-95a92/revendeur
 
 2. Add to GCP
 ```
-gcloud run deploy mspr-payetonkawa-95a92 
+gcloud run deploy mspr-payetonkawa-95a92-revendeur 
     --image gcr.io/mspr-payetonkawa-95a92/revendeur  
     --platform managed  
     --region us-central1  
