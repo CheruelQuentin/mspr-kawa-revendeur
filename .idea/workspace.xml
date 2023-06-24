@@ -9,7 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9af40e2-a1cb-43d4-ae69-901441129f8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/security/verifyUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/security/verifyUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/revendeur.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/revendeur.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="F:\save\EPSI\msprPayeTonKawa\api\revendeur" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.lint:fix">
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -64,8 +65,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint:fix" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -90,6 +102,8 @@
       <workItem from="1687191279385" duration="3934000" />
       <workItem from="1687285461294" duration="2511000" />
       <workItem from="1687426785725" duration="17000" />
+      <workItem from="1687454037136" duration="454000" />
+      <workItem from="1687533236565" duration="138000" />
     </task>
     <servers />
   </component>

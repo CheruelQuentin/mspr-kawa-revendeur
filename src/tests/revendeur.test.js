@@ -1,6 +1,6 @@
 const { allProduct, allStocks  } = require('../services/productRevendeur.service');
 const { allCustomer } = require('../services/customerRevendeur.service');
-
+const { test, expect } = require('@jest/globals');
 test('should return all products', async () => {
   const products = await allProduct();
   expect(products.length).toBeGreaterThan(0);
