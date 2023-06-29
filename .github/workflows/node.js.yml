@@ -10,31 +10,41 @@ env:
   SONAR_SCANNER_VERSION: 4.4.0.2170
 
 jobs:
-  build:
+  npmInstall:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - run: npm install
+  sonarScanner:
+    runs-on: ubuntu-latest
+    steps:
     - name: Set up SonarScanner
       run: |
         wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
         unzip sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
         export PATH=$PWD/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
-
+  sonarAnalysis:
+    runs-on: ubuntu-latest
+    steps:
     - name: Run SonarQube Analysis
       uses: SonarSource/sonarcloud-github-action@master
       with:
         args: -Dsonar.projectKey=CheruelQuentin_mspr-kawa-revendeur -Dsonar.organization=cheruelquentin
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
     - name: Run eslint
       run: npm run lint:fix
-
+  test:
+    runs-on: ubuntu-latest
+    steps:
     - name: Run tests and coverage
       run: npm test
-
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
     - name: Set Google Cloud Project
       run: gcloud config set project mspr-payetonkawa-95a92
 
