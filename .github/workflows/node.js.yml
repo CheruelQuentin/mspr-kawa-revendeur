@@ -23,6 +23,7 @@ jobs:
       run: npm test
   
   sonarScanner:
+    needs: testAndLint
     runs-on: ubuntu-latest
     steps:
     - name: Set up SonarScanner
@@ -40,7 +41,7 @@ jobs:
         
         
   deploy:
-    needs: testAndLint
+    needs: [testAndLint,sonarScanner]
     runs-on: ubuntu-latest
 
     steps:
