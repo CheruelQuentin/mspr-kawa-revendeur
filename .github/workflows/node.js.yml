@@ -21,6 +21,7 @@ jobs:
 
     - name: Run tests and coverage
       run: npm test
+  
   sonarScanner:
     runs-on: ubuntu-latest
     steps:
@@ -39,7 +40,7 @@ jobs:
         
         
   deploy:
-    needs: build
+    needs: testAndLint
     runs-on: ubuntu-latest
 
     steps:
