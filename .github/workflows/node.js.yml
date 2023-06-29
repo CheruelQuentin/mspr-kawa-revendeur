@@ -16,6 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - run: npm install
   sonarScanner:
+    needs: npmInstall
     runs-on: ubuntu-latest
     steps:
     - name: Set up SonarScanner
@@ -24,6 +25,7 @@ jobs:
         unzip sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
         export PATH=$PWD/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
   sonarAnalysis:
+    needs: [npmInstall, sonarScanner]
     runs-on: ubuntu-latest
     steps:
     - name: Run SonarQube Analysis
@@ -33,16 +35,19 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   eslint:
+    needs: [npmInstall, sonarScanner, sonarAnalysis]
     runs-on: ubuntu-latest
     steps:
     - name: Run eslint
       run: npm run lint:fix
   test:
+    needs: [npmInstall, sonarScanner, sonarAnalysis,eslint]
     runs-on: ubuntu-latest
     steps:
     - name: Run tests and coverage
       run: npm test
   deploy:
+    needs: [npmInstall, sonarScanner, sonarAnalysis,eslint, test]
     runs-on: ubuntu-latest
     steps:
     - name: Set Google Cloud Project
